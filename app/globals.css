@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+}
+
+@layer base {
+  .custom-container {
+    @apply mx-auto max-w-full px-14;
+  }
+}
+
+/* mobile:max-w-[300px] mobile:p-0 tablet:max-w-[600px] laptop:max-w-[864px] desktop:max-w-[1400px] */
