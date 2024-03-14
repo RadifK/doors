@@ -18,7 +18,7 @@ const textItems = [
 
 const Hero = () => {
   return (
-    <div>
+    <div className="w-full">
       <Image src={image} alt="image" />
       <SectionLayout title="О заводе ПРОРАБ">
         <div className="flex flex-col gap-[20px] font-normal">

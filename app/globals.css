@@ -7,7 +7,7 @@
 
 @layer base {
   .custom-container {
-    @apply mx-auto max-w-full px-14;
+    @apply mx-auto max-w-full laptop:px-14 px-2;
   }
 }
 
