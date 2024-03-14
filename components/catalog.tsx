@@ -114,7 +114,7 @@ const products: ProductProps[] = [
 
 const Catalog = () => {
   return (
-    <div className="mt-[30px]">
+    <div className="mt-[30px] custom-container">
       <h3 className="text-[36px] font-bold text-gray-600">Каталог</h3>
       {products.map((el) => (
         <Product

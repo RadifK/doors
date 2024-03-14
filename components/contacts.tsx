@@ -33,7 +33,7 @@ const contacts: Contact[] = [
 const Contatcs = () => {
   return (
     <SectionLayout title="Контакты">
-      <div>
+      <div className="flex flex-col gap-[30px]">
         {contacts.map((el) => (
           <p key={el.name}>
             <span className="font-bold text-gray-900">{el.name}: </span>

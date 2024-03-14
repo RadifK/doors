@@ -19,7 +19,7 @@ const textItems = [
 const Hero = () => {
   return (
     <div className="w-full">
-      <Image src={image} alt="image" />
+      <Image src={image} alt="image" className="w-[100vw]" />
       <SectionLayout title="О заводе ПРОРАБ">
         <div className="flex flex-col gap-[20px] font-normal">
           {textItems.map((el) => (
