@@ -8,7 +8,7 @@ interface BurgerButtonProps {
 const BurgerButton: FC<BurgerButtonProps> = (props) => {
   return (
     <button
-      className="flex flex-col justify-center px-[3px] gap-[7px] rounded-sm bg-gray-300 laptop:hidden w-[40px] h-[40px] fixed top-[20px] left-[20px] z-10  "
+      className="flex flex-col justify-center px-[3px] gap-[7px] rounded-sm bg-accent-orange-middle laptop:hidden w-[40px] h-[40px] fixed top-[20px] left-[20px] z-10  "
       {...props}
     >
       <div

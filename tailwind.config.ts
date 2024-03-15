@@ -19,6 +19,25 @@ const config: Config = {
         laptop: "1024px",
         desktop: "1600px",
       },
+      colors: {
+        // custom theme colors
+        main: {
+          green: {
+            dark: "hsl(var(--main-green-dark))",
+          },
+          grey: {
+            dark: "hsl(var(--main-grey-dark))",
+            middle: "hsl(var(--main-grey-middle))",
+            light: "hsl(var(--main-grey-light))",
+          },
+          white: "hsl(var(--main-white))",
+        },
+        accent: {
+          orange: {
+            middle: "hsl(var(--accent-orange-middle))",
+          },
+        },
+      },
     },
   },
   plugins: [],

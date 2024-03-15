@@ -60,7 +60,7 @@ const Navigation = () => {
     <div className="">
       <BurgerButton onClick={onBurgerButtonClick} burgerToggle={burgerToggle} />
       <div
-        className={`bg-gray-300 h-[100vh] laptop:w-full  col-start-1 col-end-2 flex flex-col items-center 
+        className={`bg-main-grey-middle h-[100vh] laptop:w-full  col-start-1 col-end-2 flex flex-col items-center 
         laptop:sticky top-0 fixed left-0  w-[90%] tablet:w-[70%] ${
           !burgerToggle ? `hidden  ` : `block `
         } laptop:flex laptop:flex-col text-center`}
@@ -77,9 +77,19 @@ const Navigation = () => {
               >
                 <li
                   className={`uppercase font-bold text-[16px] px-[10px] py-[20px] text-center border-y-[1px] border-gray-100 
-                  ${activeSection === el.id ? `bg-white` : `bg-inherit`} `}
+                  ${
+                    activeSection === el.id
+                      ? `bg-accent-orange-middle border-accent-orange-middle scale-y-105  text-white`
+                      : `bg-inherit`
+                  } `}
                 >
-                  {el.name}
+                  <p
+                    className={
+                      activeSection === el.id ? `scale-y-95` : `bg-inherit`
+                    }
+                  >
+                    {el.name}
+                  </p>
                 </li>
               </Link>
             ))}

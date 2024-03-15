@@ -2,10 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@layer base {
+  :root {
+    --main-green-dark: 130 60% 6%;
+    --main-grey-dark: 135 2% 41%;
+    --main-grey-middle: 0 0% 81%;
+    --main-grey-light: 0 0% 96%;
+
+    /* accent */
+
+    --accent-orange-middle: 24, 100%, 50%;
+  }
 }
 html {
   scroll-behavior: smooth;
+}
+body {
+  @apply leading-7;
 }
 @layer base {
   .custom-container {

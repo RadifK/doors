@@ -36,13 +36,17 @@ const Contatcs = () => {
       <div className="flex flex-col gap-[30px]">
         {contacts.map((el) => (
           <p key={el.name}>
-            <span className="font-bold text-gray-900">{el.name}: </span>
+            <span className="font-bold text-[18px] text-main-green-dark">
+              {el.name}:{" "}
+            </span>
             {el.link ? (
-              <a className="font-light text-gray-900" href={el.link}>
+              <a className="font-normal text-main-green-dark" href={el.link}>
                 {el.description}
               </a>
             ) : (
-              <span className="font-light text-gray-900">{el.description}</span>
+              <span className="font-normal text-main-green-dark">
+                {el.description}
+              </span>
             )}
           </p>
         ))}

@@ -19,7 +19,11 @@ const textItems = [
 const Hero = () => {
   return (
     <div className="w-full">
-      <Image src={image} alt="image" className="w-[100vw]" />
+      <Image
+        src={image}
+        alt="image"
+        className="w-[100vw] laptop:custom-container"
+      />
       <SectionLayout title="О заводе ПРОРАБ">
         <div className="flex flex-col gap-[20px] font-normal">
           {textItems.map((el) => (
