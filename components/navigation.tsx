@@ -35,7 +35,6 @@ const Navigation = () => {
   const onBurgerButtonClick = () => {
     setBurgerToggle(!burgerToggle);
   };
-  const linkClick = () => {};
 
   const [activeSection, setActiveSection] = useState("section1");
 
@@ -44,9 +43,7 @@ const Navigation = () => {
       const sections = document.querySelectorAll("section");
       sections.forEach((section) => {
         const top = section.offsetTop - 750;
-        console.log("top = ", top);
         const scrollPosition = window.scrollY;
-        console.log("scrollPosition= ", scrollPosition);
         if (scrollPosition >= top) {
           setActiveSection(section.id);
         }

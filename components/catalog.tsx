@@ -1,5 +1,8 @@
+"use client";
+import { useContext } from "react";
 import Product from "./product";
 import { ProductProps } from "./product";
+import { DataContext } from "./main";
 
 const products: ProductProps[] = [
   {
@@ -113,10 +116,12 @@ const products: ProductProps[] = [
 ];
 
 const Catalog = () => {
+  const data = useContext(DataContext);
+
   return (
     <div className="mt-[30px] custom-container">
       <h3 className="text-[36px] font-bold text-gray-600">Каталог</h3>
-      {products.map((el) => (
+      {data!.map((el) => (
         <Product
           image={el.image}
           key={el.name}

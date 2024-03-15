@@ -2,6 +2,7 @@ import Main from "../components/main";
 import Image from "next/image";
 import fsPromises from "fs/promises";
 import path from "path";
+import * as React from "react";
 
 export async function getData() {
   // Get the path of the json file
@@ -16,7 +17,7 @@ export async function getData() {
 }
 
 export default async function Home() {
-  // const data = await getData();
-  // console.log(data);
-  return <Main />;
+  const data = await getData();
+
+  return <Main data={data} />;
 }

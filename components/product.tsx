@@ -11,7 +11,7 @@ export interface ProductProps {
   complectation: Complectation[];
 }
 
-const Product: FC<ProductProps> = ({ name, complectation }) => {
+const Product: FC<ProductProps> = ({ name, complectation, image }) => {
   return (
     <div className="grid grid-cols-1  laptop:grid-cols-[2fr_1fr]  gap-x-[20px] border-b-[1px] border-gray-300 pb-[30px] mt-[30px]">
       <div>
@@ -32,12 +32,7 @@ const Product: FC<ProductProps> = ({ name, complectation }) => {
         </div>
       </div>
       <div className="laptop:justify-self-end justify-self-center mt-[15px]">
-        <Image
-          src={"/images/productImage.png"}
-          width={270}
-          height={300}
-          alt="image"
-        />
+        <Image src={image} width={270} height={300} alt="image" />
       </div>
     </div>
   );
